@@ -22,8 +22,7 @@ const quizRoutes = require('./routes/quizRoutes');
 
 // Set up cron job
 cron.schedule('* * * * *', async () => {
-  // Logic to update the status of quizzes based on start and end times
-  // For example, retrieve all quizzes and update their status accordingly
+// Update status of Quiz
   const Quiz = mongoose.model('Quiz');
   const quizzes = await Quiz.find();
   const currentTime = new Date();
