@@ -7,7 +7,7 @@ const memoryCache = require('memory-cache');
 const app = express();
 const port = 3000;
 
-mongoose.connect('mongodb+srv://ayush2002:ayush2002@cluster0.gvgmwk2.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('Your URI', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
